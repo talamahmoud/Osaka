@@ -1,0 +1,113 @@
+:root{
+    --main-color: #ff206e;
+}
+.head{
+    background-image: url('../img/bg_osaka.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.bg-primary {
+    background-color:#fff!important ;
+}
+.header-content{
+    color: white;
+}
+.head .header-content a{
+    color: var(--main-color);
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: var(--main-color);
+    transition: background-color 1s,border 1s;}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: var(--main-color);
+ }
+ .nav-link:focus, .nav-link:hover {
+    color: var(--main-color);
+}
+.about{
+    background-image: url('../img/light_dot.jpg');
+}
+.title h2 {
+    font-size: 4rem;
+    letter-spacing: 15px;
+    color: #cacaca;
+    font-weight: 900;
+}
+.title h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+.about .about-content p:first-of-type{
+    color: var(--main-color);
+}
+.services {
+    background-image: url('../img/dark_dot.jpg');
+}
+
+.services .title h2{
+    color:#222;
+}
+
+.services .title h3 {
+    color:#fff;
+
+}
+
+.service-item h2{
+    position: relative;
+    margin-bottom: 20px;
+}
+.service-item h2:after {
+    content:'';
+    width:15%;
+    height:3px;
+    position: absolute;
+    background-color: var(--main-color);
+    top:50px;
+    left:50%;
+    transform: translateX(-50%);
+    transition: width 1s;
+}
+
+.service-item:hover   h2:after{
+    width:30%;
+
+}
+.service-item .icon{
+    background-color: #000;
+    transition: 1s background-color;
+}
+.service-item:hover .icon{
+    background-color: var(--main-color) !important;
+}
+.client img{
+    width:110px;
+    height:110px;
+}
+
+.carousel-indicators [data-bs-target]{
+
+    text-indent: 0;
+    height:30px;
+    border-radius: 50%;
+}
+
+
+.nav-tabs{
+    justify-content: center;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+
+    color:var(--mainColor);
+    border:none;
+}
+
+.nav-tabs .nav-link{
+    color:#000;
+    border:none;
+}
